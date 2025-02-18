@@ -1,0 +1,30 @@
+[project]
+name = "climate-startup-funding"
+version = "0.1.0"
+description = "Data pipeline for climate startup funding data"
+authors = [
+    {name = "Joseph McGuire", email = "joseph.c.mcg@gmail.com"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "pandas>=2.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "aiohttp>=3.8.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.7.0",
+    "isort>=5.12.0",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["climate_startup_funding"]
